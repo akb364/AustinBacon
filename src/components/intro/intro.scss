@@ -1,58 +1,51 @@
 @import "../../global.scss";
 
 .intro{
-    background-color: white;
+    background-color: #000;
     display: flex;
+    flex-direction: column;
 
     @include mobile{
         flex-direction: column;
         align-items: center;
     }
     .left{
-        flex: 0.5;
-        overflow: hidden;
-
+        flex: 0.6;
+        position: relative;
         .imgContainer{
-            width: 700px;
-            height: 700px;
-            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            float: right;
+
 
             @include mobile{
                 align-items: center;
+                overflow: hidden;
         }
 
             img{
-                height: 70%;
-                width: 100%;
-                border-radius: 40%;
-                border:2px solid #fff;
-                -moz-box-shadow: 0px 6px 5px #ccc;
-                -webkit-box-shadow: 0px 8px 5px #ccc;
-                box-shadow: 10px 10px 10px #ccc;
-                
+                display: flex;
+                width: 40%;
                 @include mobile{
-                    height: 60%;
                     position: relative;
-                    bottom: 80px;
+                    width: 50%;
+                    top: 10px;
             }
         }
     }
 }
     .right{
-        flex: 0.5;
+        flex: 0.4;
         position: relative;
+
 
         .wrapper{
             width: 100%;
             height: 100%;
-            padding-left: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             @include mobile{
                 padding-left: 0;
@@ -62,6 +55,8 @@
             h1{
                 font-size: 60px;
                 margin: 10px 0;
+                color: $mainColor;
+                text-shadow: rgb(33, 33, 33) 3px 5px 4px;
 
                 @include mobile{
                     font-size: 40px;
@@ -75,7 +70,9 @@
                 display: flex;
                 span{
                     font-size: inherit;
-                    color: crimson;
+                    align-items: center;
+                    justify-content: center;
+                    color: $mainColor;
                     padding-left: 3px;
                 }
                 @include mobile{
