@@ -6,14 +6,13 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/AustinHeadshot.jpg" alt="" />
+          <img src="assets/enjoy.jpg" alt="" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
           <h1>Austin Bacon</h1>
           <h3>
-            React
             <span>
               <Typewriter
                 options={{
