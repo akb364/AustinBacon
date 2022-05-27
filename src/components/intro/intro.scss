@@ -84,11 +84,11 @@
         a{
             position: absolute;
             bottom: 10px;
-            left: 30%;
-
-            img{
-                width: 30px;
+            left: 750px;
+            .arrow{
+                font-size: 80px;
                 animation: arrowBlink 2s infinite;
+                color: $mainColor;
             }
             @keyframes arrowBlink {
                 100%{

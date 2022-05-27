@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { Person, Mail, Home } from "@material-ui/icons";
+import { Person, Mail, Home, KeyboardArrowDown } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (

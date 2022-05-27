@@ -1,5 +1,6 @@
 import "./intro.scss";
 import Typewriter from "typewriter-effect";
+import { KeyboardArrowDown } from "@material-ui/icons";
 
 export default function Intro() {
   return (
@@ -26,7 +27,7 @@ export default function Intro() {
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="down arrow"></img>
+          <KeyboardArrowDown className="arrow"></KeyboardArrowDown>
         </a>
       </div>
     </div>
