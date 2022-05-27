@@ -9,7 +9,7 @@
       }
 
     .left{        
-        flex: 1;
+        flex: .6;
         overflow: hidden;
 
         img{
@@ -33,6 +33,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
+            @include mobile {
+                height: 50%;
+                position: relative;
+                
+              }
 
             input{
                 width: 300px;

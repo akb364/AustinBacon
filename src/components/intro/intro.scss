@@ -29,7 +29,7 @@
                 @include mobile{
                     position: relative;
                     width: 50%;
-                    top: 10px;
+                    top: 20px;
             }
         }
     }
@@ -50,6 +50,8 @@
             @include mobile{
                 padding-left: 0;
                 align-items: center;
+                position: relative;
+                bottom: 80px;
             }
 
             h1{
