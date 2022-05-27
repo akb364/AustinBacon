@@ -1,13 +1,14 @@
 @import "../../global.scss";
 
 .portfolio{
-    background-color: white;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h1{
         font-size: 50px;
+        color: $mainColor;
 
         @include mobile{
             font-size: 20px;
@@ -18,6 +19,7 @@
         padding: 0;
         list-style: none;
         display: flex;
+        color: $mainColor;
 
         @include mobile{
             flex-wrap: wrap;
@@ -40,7 +42,7 @@
                 width: 220px;
                 height: 150px;
                 border-radius: 20px;
-                border: 1px solid rgb(240, 239, 239);
+                border: 2px solid $mainColor;
                 margin: 10px 20px;
                 display: flex;
                 align-items: center;
