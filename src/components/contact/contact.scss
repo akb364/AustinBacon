@@ -1,5 +1,37 @@
 @import "../../global.scss";
 
+.swal-button {
+                color: white;
+                background-color: $mainColor;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $mainColor;
+                    color: black;
+                    outline: none;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+  }
+  .swal-modal {
+    background-color: black;
+    border: 3px solid $mainColor;
+    overflow: hidden;
+  }
+
+  .swal-title {
+    color: $mainColor;
+}
+
+  .swal-text {
+      color: $mainColor;
+  }
+
 .contact{
     background-color: white;
     display: flex;
@@ -47,6 +79,7 @@
                 @include mobile {
                     width: 200px;
                     height: 20px;
+                    margin-bottom: 20px;
                   }
             }
             textarea{
@@ -64,7 +97,7 @@
                 width: 150px;
                 height: 30px;
                 color: white;
-                background-color: crimson;
+                background-color: $mainColor;
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
@@ -75,7 +108,7 @@
                 }
             }
             span{
-                color: crimson;
+                color: $darkGreen;
             }
         }
     }

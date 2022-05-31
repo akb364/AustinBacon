@@ -1,28 +1,63 @@
 import "./contact.scss";
-import {useState} from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import swal from "sweetalert";
 
 export default function Contact() {
+  const [messageOn, setMessageOn] = useState(false);
 
-  const [message,setMessage] = useState(false);
-  
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    setMessage(true);
-  }
+
+    emailjs
+      .sendForm(
+        "service_eb260kp",
+        "template_42dhsw4",
+        form.current,
+        "Kii4Ta6FGln6vhq_e"
+      )
+      .then(
+        (result) => {
+          swal({
+            title: "Success!",
+            text: "Message Sent",
+            button: "Sweet!",
+          });
+          e.target.reset();
+        },
+        (error) => {
+          swal({
+            title: "Uh oh!",
+            text: "Something went wrong, but you can still email me by clicking my email on the nav bar.",
+            icon: "error",
+            button: "OK",
+          });
+        }
+      );
+  };
+
   return (
-    <div className='contact' id="contact">
+    <div className="contact" id="contact">
       <div className="left">
         <img src="assets/shake.svg" alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email"/>
-          <textarea placeholder="Message"></textarea>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" placeholder="Name" name="user_name" />
+          <input type="text" placeholder="Email" name="user_email" />
+          <input
+            type="text"
+            placeholder="Organization"
+            name="user_organization"
+          />
+          <textarea placeholder="Message" name="message"></textarea>
           <button type="submit">Send</button>
-          {message && <span>Thanks, I will replay ASAP :)</span>}
+          {messageOn && <span>Thanks, I will reply ASAP :)</span>}
         </form>
       </div>
     </div>
-  )
+  );
 }

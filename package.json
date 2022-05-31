@@ -1,9 +1,10 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://akb364.github.io",
+  "homepage": "https://akb364.github.io/Portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^5.16.4",
@@ -14,6 +15,7 @@
     "react-ityped": "^1.0.2",
     "react-scripts": "5.0.1",
     "sass": "^1.52.1",
+    "sweetalert": "^2.1.2",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
