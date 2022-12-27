@@ -2,6 +2,7 @@ import "./contact.scss";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
+import logo from "../../assets/logo.png"
 
 export default function Contact() {
   const [messageOn, setMessageOn] = useState(false);
@@ -41,7 +42,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src={logo} alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
