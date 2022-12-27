@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .swal-button {
-                color: white;
+                color: black;
                 background-color: $mainColor;
                 border: none;
                 border-radius: 10px;
@@ -9,8 +9,8 @@
                 cursor: pointer;
 
                 &:hover{
-                    background-color: $mainColor;
-                    color: black;
+                    background-color: black;
+                    color: $mainColor;
                     outline: none;
                 }
 
@@ -33,7 +33,7 @@
   }
 
 .contact{
-    background-color: white;
+    background-color: black;
     display: flex;
 
     @include mobile {
@@ -43,9 +43,16 @@
     .left{        
         flex: .6;
         overflow: hidden;
-
+        @include mobile {
+            flex: .8;
+          }
         img{
-            height: 100%;
+            height:70%;
+            margin-left: 140px;
+            @include mobile {
+                height:120%;
+                margin-left: 0px;
+              }
         }
     }
     .right{     
@@ -54,6 +61,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        color: $mainColor;
 
         h2{
             font-size: 30px;
@@ -64,7 +72,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
             @include mobile {
                 height: 50%;
                 position: relative;
@@ -75,32 +82,36 @@
                 width: 300px;
                 height: 30px;
                 font-size: 14px;
+                margin-top: 10px;
 
                 @include mobile {
                     width: 200px;
                     height: 20px;
-                    margin-bottom: 20px;
+                    margin-bottom: 0px;
                   }
             }
             textarea{
                 width: 300px;
                 height: 200px;
                 font-size: 14px;
+                margin-top: 10px;
 
                 @include mobile {
                     width: 200px;
                     height: 100px;
+                    margin-top: 10px;
                   }
             }
 
             button{
                 width: 150px;
                 height: 30px;
-                color: white;
-                background-color: $mainColor;
+                color: black;
+                background-color: white;
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
+                margin-top: 10px;
                 cursor: pointer;
 
                 &:focus{

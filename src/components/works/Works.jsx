@@ -1,5 +1,6 @@
 import "./works.scss";
 import { useState } from "react";
+import arrow from "../../assets/arrow.png"
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,10 +37,11 @@ export default function Works() {
 
   return (
     <div className="works" id="works">
+      <h1>What I do.</h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
+        >
         {data.map((d) => (
           <div className="container">
             <div className="item">
@@ -64,13 +66,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

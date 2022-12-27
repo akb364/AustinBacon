@@ -5,14 +5,18 @@ import { KeyboardArrowDown } from "@material-ui/icons";
 export default function Intro() {
   return (
     <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
-          <img src="assets/enjoy.jpg" alt="" />
+      <div className="top">
+        <div className="wrapper">
+          <div className="putLeft">
+          <h1>Hi, I'm Austin Bacon</h1>
+              <hr className="hr"></hr>
+          <h1>Welcome to my portfolio</h1>
+
+          </div>
         </div>
       </div>
-      <div className="right">
+      <div className="bottom">
         <div className="wrapper">
-          <h1>Austin Bacon</h1>
           <h3>
             <span>
               <Typewriter
@@ -25,10 +29,10 @@ export default function Intro() {
               />
             </span>
           </h3>
-        </div>
         <a href="#portfolio">
           <KeyboardArrowDown className="arrow"></KeyboardArrowDown>
         </a>
+        </div>
       </div>
     </div>
   );
