@@ -29,7 +29,7 @@ export default function Intro() {
               />
             </span>
           </h3>
-        <a href="#portfolio">
+        <a href="#works">
           <KeyboardArrowDown className="arrow"></KeyboardArrowDown>
         </a>
         </div>

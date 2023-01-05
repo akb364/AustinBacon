@@ -35,23 +35,28 @@
 .contact{
     background-color: black;
     display: flex;
+    justify-content: center;
 
     @include mobile {
         flex-direction: column;
       }
 
     .left{        
-        flex: .6;
+        flex: 1;
         overflow: hidden;
         @include mobile {
             flex: .8;
           }
         img{
-            height:70%;
-            margin-left: 140px;
+            width:90%;
+            margin-left: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             @include mobile {
                 height:120%;
-                margin-left: 0px;
+                margin-left: 14px;
               }
         }
     }
@@ -75,6 +80,7 @@
             @include mobile {
                 height: 50%;
                 position: relative;
+                margin-bottom: 200px;
                 
               }
 

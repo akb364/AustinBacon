@@ -9,10 +9,10 @@
     h1{
         margin-bottom: 600px;
         color: $mainColor;
-        font-size: 80px;
+        font-size: 50px;
         @include mobile{
             margin-bottom: 10;
-            font-size: 20px;
+            font-size: 40px;
         }
     }
 

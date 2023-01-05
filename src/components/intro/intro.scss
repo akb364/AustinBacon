@@ -35,14 +35,14 @@
             hr{
                 background-color: $mainColor;;
                 margin: 0.5em 0 0.5em 0;
-                width: 30%;
+                width: 40%;
                 @include mobile{
                     margin-left: 40px;
                     width: 80%;
                 }
             }
             h1{
-                font-size: 40px;
+                font-size: 50px;
                 margin: 10px;
                 padding-bottom: .5em;
                 padding-top: .5em;
@@ -58,11 +58,11 @@
             h3{
                 font-size: 40px;
                 display: flex;
+                color: $secondaryColor;
                 span{
                     font-size: inherit;
                     align-items: center;
                     justify-content: center;
-                    color: $mainColor;
                     padding-left: 3px;
                 }
                 @include mobile{
@@ -94,11 +94,11 @@
             h3{
                 font-size: 40px;
                 display: flex;
+                color: $secondaryColor;
                 span{
                     font-size: inherit;
                     align-items: center;
                     justify-content: center;
-                    color: $mainColor;
                     padding-left: 3px;
                 }
                 @include mobile{
@@ -111,7 +111,7 @@
             .arrow{
                 font-size: 80px;
                 animation: arrowBlink 2s infinite;
-                color: $mainColor;
+                color: $secondaryColor;
             }
             @keyframes arrowBlink {
                 100%{
